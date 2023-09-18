@@ -12,11 +12,11 @@ int main() {
 	    cin>>x;
 	    if(x>=2000)
 	    {
-	        cout<<"yes"<<endl;
+	        cout<<"YES"<<endl;
 	    }
 	    else
 	    {
-	        cout<<"no"<<endl;
+	        cout<<"NO"<<endl;
 	    }
 	}
 	return 0;
