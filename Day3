@@ -1,0 +1,24 @@
+//This year X students joined his class and each student will require one chair to sit on. Chef already has Y chairs in his class. 
+//Determine the minimum number of new chairs Chef must buy so that every student is able to get one chair to sit on.
+
+//CODE IN C++
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int x,y;
+	    cin>>x>>y;
+	    if(x>y){
+	    cout<<x-y<<endl;
+	    }
+	    else 
+	    cout<<0<<endl;
+	}
+	return 0;
+}
