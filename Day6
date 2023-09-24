@@ -1,0 +1,61 @@
+////Beginning Question
+///A single car can accommodate at most 4 people. N friends want to go to a restaurant for a party. Find the minimum number of cars required to accommodate all the friends.
+
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main() {
+	// your code goes here]
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    float N,result;
+	    cin>>N;
+	    result=N/4;
+	    result=ceil(result);
+	    cout<<result<<endl;
+	    
+	}
+	return 0;
+}
+
+
+
+
+////Intermediate Question
+///Given a positive integer N, MoEngage wants you to determine if it is possible to rearrange the digits of N (in decimal representation) and obtain a multiple of 5.
+///For each test case, print Yes if it is possible to rearrange the digits of N so that it becomes a multiple 5. Otherwise, print No.
+///My approach to solve this question is to find whether digit 0 or 5 is present in the input number or not.If present it is possible to rearrange the digit and make a multiple of 5.
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int d,flag=0;
+	    cin>>d;
+	    int n;
+	    cin>>n;
+	    
+	    while (n > 0) {
+            if (n % 10 == 0 || n % 10 == 5) {
+                flag = 1;
+                cout << "YES" << endl;
+                break;
+            }
+            n /= 10;
+        }
+        
+        if (flag == 0) {
+            cout << "NO" << endl;
+        }
+    }
+	return 0;
+}
